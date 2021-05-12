@@ -17,6 +17,9 @@ declare module 'react-native-zendesk-v2' {
 
   // function to set visitor info in chat
   export function setVisitorInfo(visitorInfo: UserInfo): void;
+  
+  // function to set user identity
+  export function setUserIdentity(visitorInfo: UserInfo): void;
 
   // function to register notifications token with zendesk
   export function setNotificationToken(token: string): void;
