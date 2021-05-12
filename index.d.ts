@@ -24,7 +24,7 @@ declare module 'react-native-zendesk-v2' {
   // function to register notifications token with zendesk
   export function setNotificationToken(token: string): void;
   
-  interface ChatOptions {
+ interface ChatOptions {
     botName?: string
     chatOnly?: boolean
     color?: string
@@ -32,7 +32,7 @@ declare module 'react-native-zendesk-v2' {
     disableTicketCreation?: boolean
     name?: string
     email?: string
-    phone?: number
+    phone?: string
     department?: string
     tags?: Array<string>
   }
