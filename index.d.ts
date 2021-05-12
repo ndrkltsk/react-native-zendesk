@@ -24,18 +24,17 @@ declare module 'react-native-zendesk-v2' {
   // function to register notifications token with zendesk
   export function setNotificationToken(token: string): void;
   
-  interface ChatOptions extends UserInfo {
+  interface ChatOptions {
     botName?: string
-    // boolean value if you want just chat sdk or want to use all the sdk like support, answer bot and chat
-    // true value means just chat sdk
     chatOnly?: boolean
-    // hex code color to set on chat
     color?: string
-    /* help center specific props only */
-    // sent in help center function only to show help center with/without chat
     withChat?: boolean
-    // to enable/disable ticket creation in help center
     disableTicketCreation?: boolean
+    name?: string
+    email?: string
+    phone?: number
+    department?: string
+    tags?: Array<string>
   }
 
   interface InitOptions {
